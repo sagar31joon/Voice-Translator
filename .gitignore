@@ -1,0 +1,4 @@
+models/vosk/vosk-small-hi
+core/__pycache__
+io_layer/__pycache__
+venv/
