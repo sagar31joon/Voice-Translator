@@ -10,7 +10,7 @@ class VoiceTranslationPipeline:
         self.translator = HindiEnglishTranslator()
 
     def run(self):
-        print("🎤 Listening... Speak Hindi (Ctrl+C to stop)")
+        print("Listening... Speak Hindi (Ctrl+C to stop)")
         self.mic.start()
 
         try:
