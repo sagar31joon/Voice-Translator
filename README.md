@@ -51,6 +51,7 @@ HTE_translator/
 ├── io_layer/
 │   └── mic_stream.py       # Real-time microphone input
 ├── models/
+│   ├── transformer/opus-mt-high-en #MarianMT
 │   └── vosk/vosk-small-hi/ # Hindi ASR model
 └── venv/
 ```
