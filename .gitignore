@@ -1,4 +1,5 @@
 models/vosk/vosk-small-hi
+models/transformer/
 core/__pycache__
 io_layer/__pycache__
 venv/

@@ -15,6 +15,7 @@ The system is designed as a **streaming pipeline**, focusing on clean architectu
 * 🗣️ **Offline Hindi speech recognition** using Vosk
 * 🌐 **Hindi → English text translation** using MarianMT
 * 🚫 **No intermediate WAV files**
+* 🌐 **Offline-capable Hindi → English translation** using MarianMT (model cached locally after first run)
 * 🧩 Clean separation of concerns (I/O, ASR, Translation, Pipeline)
 * ⚡ Event-based translation on sentence boundaries
 
@@ -107,6 +108,7 @@ am/ conf/ graph/ ivector/
 ```bash
 python main.py
 ```
+> **Note:** The translation model is downloaded automatically on first run if not already present. After initial setup, the system runs fully offline.
 
 * Speak Hindi into the microphone
 * Pause briefly after each sentence
@@ -129,6 +131,8 @@ English: What are you doing?
 * Speech recognition is **fully offline**
 * Translation is performed only after sentence finalization to avoid partial outputs
 * The system is modular and easily extensible to other languages or models
+* Machine translation is **offline-capable**. The MarianMT model is automatically downloaded once (if not present) and then loaded from local storage for subsequent runs.
+
 
 ---
 
